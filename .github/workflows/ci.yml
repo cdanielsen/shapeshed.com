@@ -11,6 +11,6 @@ jobs:
     - uses: actions/checkout@v2.0.0
     - name: make install
       run: make install
-    - name: build site
-      run: hugo
+    - name: make build
+      run: make build
 
