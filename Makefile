@@ -10,7 +10,7 @@ install:
 	wget "https://github.com/gohugoio/hugo/releases/download/v0.62.2/hugo_0.62.2_Linux-64bit.tar.gz"
 	tar -xvzf hugo_0.62.2_Linux-64bit.tar.gz
 	chmod +x hugo
-	mv hugo /usr/local/bin/
+	sudo mv hugo /usr/local/bin/
 
 clean: 
 	@rm -Rf ./public
