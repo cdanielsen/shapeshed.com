@@ -5,7 +5,7 @@ CSSMD5 = $(shell md5sum ./public/css/styles.css | awk '{ print $$1 }')
 build: clean hugo css minify-html gzip-static
 
 install:
-	apt-get install w3c-markup-validator
+	sudo apt-get install w3c-markup-validator
 	wget "https://github.com/tdewolff/minify/releases/download/v2.7.0/minify_2.7.0_linux_amd64.tar.gz"
 	tar -xzf minify_2.7.0_linux_amd64.tar.gz
 	chmod +x minify
