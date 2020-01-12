@@ -7,8 +7,10 @@ build: clean hugo css minify-html gzip-static
 install:
 	#wget "https://github.com/tdewolff/minify/releases/download/v2.5.2/minify_2.5.2_linux_amd64.tar.gz"
 	#tar -xvzf minify_2.5.2_linux_amd64.tar.gz
+	mkdir themes
+	git clone https://github.com/shapeshed/shapeshed-minimal.git themes/shapeshed-minimal
 	wget -q "https://github.com/gohugoio/hugo/releases/download/v0.62.2/hugo_0.62.2_Linux-64bit.tar.gz"
-	tar -xvzf hugo_0.62.2_Linux-64bit.tar.gz
+	tar -xzf hugo_0.62.2_Linux-64bit.tar.gz
 	chmod +x hugo
 	sudo mv hugo /usr/local/bin/
 

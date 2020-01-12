@@ -10,5 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2.0.0
     - name: make install
-      run: echo $PATH && make install
+      run: make install
+    - name: make hugo
+      run: make hugo
 
